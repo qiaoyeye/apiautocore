@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="437" started-at="2016-02-03T10:45:10Z" finished-at="2016-02-03T10:45:11Z">
+  <suite name="Default suite" duration-ms="382" started-at="2016-03-02T04:16:23Z" finished-at="2016-03-02T04:16:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="437" started-at="2016-02-03T10:45:10Z" finished-at="2016-02-03T10:45:11Z">
-      <class name="com.test.TestSetPaypwd">
-        <test-method status="PASS" signature="setpaypwd(java.lang.Object)[pri:0, instance:com.test.TestSetPaypwd@30a1e97a]" name="setpaypwd" duration-ms="243" started-at="2016-02-03T18:45:10Z" data-provider="testdp" finished-at="2016-02-03T18:45:11Z">
+    <test name="Default test" duration-ms="382" started-at="2016-03-02T04:16:23Z" finished-at="2016-03-02T04:16:24Z">
+      <class name="com.core.test.TestXiaoBai">
+        <test-method status="PASS" signature="testxb(java.lang.Object)[pri:0, instance:com.core.test.TestXiaoBai@7fd00911]" name="testxb" duration-ms="216" started-at="2016-03-02T12:16:24Z" data-provider="testdp" finished-at="2016-03-02T12:16:24Z">
           <params>
             <param index="0">
               <value>
@@ -17,8 +17,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setpaypwd -->
-      </class> <!-- com.test.TestSetPaypwd -->
+        </test-method> <!-- testxb -->
+      </class> <!-- com.core.test.TestXiaoBai -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
