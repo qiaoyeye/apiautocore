@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="437" started-at="2016-02-03T10:45:10Z" finished-at="2016-02-03T10:45:11Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="437" started-at="2016-02-03T10:45:10Z" finished-at="2016-02-03T10:45:11Z">
+      <class name="com.test.TestSetPaypwd">
+        <test-method status="PASS" signature="setpaypwd(java.lang.Object)[pri:0, instance:com.test.TestSetPaypwd@30a1e97a]" name="setpaypwd" duration-ms="243" started-at="2016-02-03T18:45:10Z" data-provider="testdp" finished-at="2016-02-03T18:45:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setpaypwd -->
+      </class> <!-- com.test.TestSetPaypwd -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

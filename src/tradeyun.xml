@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="false">
+<listeners>
+<listener class-name="org.uncommons.reportng.HTMLReporter" />
+<!--<listener class-name="com.core.base.RetryListener" />-->
+</listeners>
+  <test name="Test">
+    <classes>
+    <class name="com.test.TestLogin"/>
+    </classes>
+  </test> <!-- Test -->
+  <parameter name="maxRetries" value="1"/> 
+</suite> <!-- Suite -->
