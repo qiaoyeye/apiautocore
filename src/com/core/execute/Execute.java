@@ -12,6 +12,7 @@ import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
@@ -22,6 +23,7 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
 
+import com.core.clientfactory.InitClient;
 import com.core.file.OptionFile;
 import com.core.util.GetVerifyCode;
 
@@ -217,6 +219,10 @@ public class Execute {
         }
         
         HttpPost httpPost = new HttpPost(url);
+        //----------------------------------------------------
+        RequestConfig config = new InitClient()._getRequestConfig();
+        httpPost.setConfig(config);
+        //-------------------------------------------------------------
 		try {
 			httpPost.setEntity(new UrlEncodedFormEntity(ps));
 		} catch (UnsupportedEncodingException e1) {

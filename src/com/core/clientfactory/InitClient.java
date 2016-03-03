@@ -22,7 +22,7 @@ public class InitClient {
 
     }
     
-    private static RequestConfig _getRequestConfig(){
+    public RequestConfig _getRequestConfig(){
         RequestConfig requestConfig = RequestConfig.custom()
                 .setSocketTimeout(5000)
                 .setConnectTimeout(5000)
