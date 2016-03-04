@@ -63,7 +63,7 @@ public class Execute {
 		HttpClient client = HttpClients.createDefault();
 		//execute(client, 3);
 		Execute ecExecute = new Execute(5);
-		ecExecute.execute(client, 4);
+		ecExecute.executor(client, 4);
 		System.out.println("responseCode:"+ecExecute.responseCode);
 	}
 	
@@ -76,7 +76,7 @@ public class Execute {
 	* @return void
 	* @throws 
 	*/
-	public void execute(HttpClient client, int row) {
+	public void executor(HttpClient client, int row) {
 		String priority = OptionFile.readProperties("./conf/Config.properties", "priority");
 /*		if(priority.equals("0")){
 			case_count = 1;
