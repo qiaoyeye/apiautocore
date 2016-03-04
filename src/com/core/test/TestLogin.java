@@ -27,7 +27,7 @@ public class TestLogin {
 		System.out.println(caseNum);
 		int rowNum = (int)caseNum;
 		Execute execute = new Execute(sheet);
-		execute.execute(client, rowNum);
+		execute.executor(client, rowNum);
 	}
 	
 }

@@ -23,6 +23,6 @@ public class TestUsernameIsTrue {
 		System.out.println(caseNum);
 		int rowNum = (int)caseNum;
 		Execute ce = new Execute(sheet);
-		ce.execute(client, rowNum);
+		ce.executor(client, rowNum);
 	}
 }

@@ -25,6 +25,6 @@ public class TestChongZhi {
 		System.out.println("caseNum"+caseNum);
 		int rowNum = (int)caseNum;
 		Execute execute = new Execute(sheet);
-		execute.execute(client, rowNum);
+		execute.executor(client, rowNum);
 	}
 }
