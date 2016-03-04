@@ -10,15 +10,15 @@ import java.util.List;
 import org.testng.ITestContext;
 import org.testng.annotations.DataProvider;
 
-import com.core.execute.Priority;
-import com.core.file.OptionFile;
+import com.core.ienum.Priority;
+import com.core.util.OptionFile;
 
 /** 
  * @author QiaoJiafei 
  * @version 创建时间：2016年1月14日 下午2:13:10 
  * 类说明 
  */
-public class MyStaticProvider {
+public class IStaticProvider {
 		
 	@DataProvider(name="testdp")
 	public static Iterator<Object[]> createData(Method method, ITestContext context) throws Exception{

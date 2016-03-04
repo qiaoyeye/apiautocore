@@ -11,8 +11,6 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
-import com.core.file.OptionFile;
-
 /** 
  * @author QiaoJiafei 
  * @version 创建时间：2016年1月14日 上午10:39:53 

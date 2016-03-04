@@ -1,4 +1,4 @@
-package com.core.file;
+package com.core.util;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;

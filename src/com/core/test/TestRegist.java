@@ -29,7 +29,7 @@ import org.apache.http.util.EntityUtils;
 import org.apache.xmlbeans.impl.xb.xmlconfig.ConfigDocument.Config;
 import org.openqa.selenium.io.FileHandler;
 
-import com.core.file.OptionFile;
+import com.core.util.OptionFile;
 
 /** 
  * @author QiaoJiafei 

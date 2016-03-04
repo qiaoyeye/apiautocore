@@ -1,4 +1,4 @@
-package com.core.execute;
+package com.core.ienum;
 /** 
  * @author QiaoJiafei 
  * @version 创建时间：2016年1月20日 上午10:38:16 
@@ -30,7 +30,6 @@ public enum Priority {
         }
 	};
     Priority() {
-    }
-	
+    }	
     
 }

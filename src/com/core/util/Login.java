@@ -11,7 +11,7 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
-import com.core.file.OptionFile;
+import com.core.config.HttpConfig;
 
 /** 
  * @author QiaoJiafei 
@@ -19,25 +19,24 @@ import com.core.file.OptionFile;
  * 类说明 
  */
 public class Login {
-
-	
 	
 	int responseCode = 0;
 	//测试用例的参数数据从第几列开始
-	final int CASESTART = 4;
+	private final int CASESTART = 4;
 	//得到参数请求个数
-	int PARAM_COUNT=2;
+	private int PARAM_COUNT=2;
 	//得到请求方式，POST or GET
-	String REQUEST_TYPE="POST";
+	private String REQUEST_TYPE="POST";
 	//得到数据交换方式,Json or Param
-	String TYPE="Json";
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		HttpClient client = HttpClients.createDefault();
-		Login lg = new Login();
-		System.out.println(lg.getResponseByPostByJson(client, 3));
+	private String TYPE="Json";
+	private HttpClient client;
+	
+	public Login() {}
+	
+	public Login(HttpConfig config) {
+		this.client = config.getClient();
 	}
-	public String getResponseByPostByJson(HttpClient client, int sheet) {
+	public String getResponseByPostByJson(int sheet) {
 		
 		String responseString = "";
 		String params = "";

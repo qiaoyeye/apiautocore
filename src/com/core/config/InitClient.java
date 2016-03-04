@@ -1,8 +1,8 @@
-package com.core.clientfactory;
+package com.core.config;
 
+import org.apache.http.client.HttpClient;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.conn.ssl.NoopHostnameVerifier;
-import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 
 /** 
@@ -12,7 +12,15 @@ import org.apache.http.impl.client.HttpClients;
  */
 public class InitClient {
 
-    public static CloseableHttpClient _createSSLClientDefault() {
+    /** 
+    * 创建ssl的client
+    * @Title: _createSSLClientDefault 
+    * @Description: TODO
+    * @return
+    * @return HttpClient
+    * @throws 
+    */
+    public static HttpClient _createSSLClientDefault() {
         try {
             return HttpClients.custom().setSSLHostnameVerifier(new NoopHostnameVerifier()).build();
         } catch (Exception e) {
@@ -22,12 +30,16 @@ public class InitClient {
 
     }
     
-    public RequestConfig _getRequestConfig(){
-        RequestConfig requestConfig = RequestConfig.custom()
-                .setSocketTimeout(5000)
-                .setConnectTimeout(5000)
-                .setConnectionRequestTimeout(5000)
-                .build();
-        return requestConfig;
+    /** 
+    * 创建正常的client
+    * @Title: defaultclient 
+    * @Description: TODO
+    * @return
+    * @return HttpClient
+    * @throws 
+    */
+    public static HttpClient defaultclient() {
+    	return HttpClients.createDefault();
     }
+
 }

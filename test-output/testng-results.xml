@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="382" started-at="2016-03-02T04:16:23Z" finished-at="2016-03-02T04:16:24Z">
+  <suite name="Default suite" duration-ms="484" started-at="2016-03-04T04:02:22Z" finished-at="2016-03-04T04:02:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="382" started-at="2016-03-02T04:16:23Z" finished-at="2016-03-02T04:16:24Z">
+    <test name="Default test" duration-ms="484" started-at="2016-03-04T04:02:22Z" finished-at="2016-03-04T04:02:22Z">
       <class name="com.core.test.TestXiaoBai">
-        <test-method status="PASS" signature="testxb(java.lang.Object)[pri:0, instance:com.core.test.TestXiaoBai@7fd00911]" name="testxb" duration-ms="216" started-at="2016-03-02T12:16:24Z" data-provider="testdp" finished-at="2016-03-02T12:16:24Z">
+        <test-method status="PASS" signature="testxb(java.lang.Object)[pri:0, instance:com.core.test.TestXiaoBai@8fc095]" name="testxb" duration-ms="313" started-at="2016-03-04T12:02:22Z" data-provider="testdp" finished-at="2016-03-04T12:02:22Z">
           <params>
             <param index="0">
               <value>
