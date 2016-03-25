@@ -10,7 +10,7 @@ import java.util.List;
 import org.testng.ITestContext;
 import org.testng.annotations.DataProvider;
 
-import com.core.ienum.Priority;
+import com.core.constant.Priority;
 import com.core.util.OptionFile;
 
 /** 

@@ -1,4 +1,4 @@
-package com.core.ienum;
+package com.core.constant;
 /** 
  * @author QiaoJiafei 
  * @version 创建时间：2016年1月20日 上午10:38:16 
